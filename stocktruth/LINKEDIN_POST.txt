@@ -1,0 +1,28 @@
+Built StockTruth for the PromptWars Business Rescue Challenge.
+
+The case: NOVA CART, a local quick-commerce platform, was growing. But repeat purchase fell from 41% to 27%, cancellations nearly doubled to 11%, and promo spend rose 79% while orders rose 23%.
+
+Everyone had a theory: more marketing, faster delivery, better stores. The data pointed somewhere else:
+
+- 61% of customers who stopped ordering had rated the app 4 stars or higher. The app wasn't the problem. The order was.
+- 53% of cancellations came from products being unavailable or stores rejecting orders.
+- 39% of partner stores said keeping online stock updated was too much work.
+
+The real problem: nobody could trust the stock data, so customers got failed orders, left, and the company paid to acquire new ones.
+
+So I built StockTruth, a stock reliability layer:
+- Stores confirm stock in one tap, and see which items are most likely to be wrong
+- Every item gets a confidence score
+- Customers see risky items before checkout, with a more reliable nearby store offered
+- Unmet searches become a demand signal for stores
+
+Does it work? On 5,000 synthetic orders calibrated to the case, the lowest-confidence band cancelled 35.0% of the time vs 2.1% for the highest. The data is simulated, so the next step is a 4-week pilot with 100 stores and a control group.
+
+Estimated impact under stated assumptions: about 800 orders rescued a month, about Rs 3.9 lakh in order value protected, and about 400 fewer support tickets. Software only: at a Rs 10 lakh rollout cost, payback is about 7.5 months, inside the Rs 25 lakh budget.
+
+Biggest lesson: the problem was never growth. It was the quality of growth. And AI doesn't have to mean a complicated model.
+
+Live demo: [ADD LINK]
+Code: [ADD LINK]
+
+#PromptWars #BuildWithAI #Hackathon #ProductThinking #QuickCommerce #AIforBusiness

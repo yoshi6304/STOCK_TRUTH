@@ -1,0 +1,12 @@
+# Static site: no build step. Netlify just serves this folder.
+[build]
+  publish = "."
+  command = "echo 'static site, nothing to build'"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
